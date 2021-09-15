@@ -16,9 +16,10 @@ void pall(stack_t **shead, unsigned int line_number)
  * @line_number: Current line number.
  * Return: Void.
  */
+void pint_o(stack_t **shead, unsigned int line_number)
 {
 
-	if (!shead)
+	if (!*shead)
 	{
 		dprintf(stderr, " L%d: can't pint, stack empty\n", line_number);
 		exit(EXIT_FAILURE);
